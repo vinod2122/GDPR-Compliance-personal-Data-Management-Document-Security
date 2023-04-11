@@ -1,0 +1,75 @@
+<html>
+<head>
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function valid1(){
+					var uname=document.forms[0].uname.value;
+					var pwd=document.forms[0].pwd.value;
+					var val=true;
+					if(uname==""){
+						f1.innerText="username required";
+							val=false;
+					}
+					else f1.innerText=" ";
+					if(pwd==""){
+						f2.innerText="password required";
+						val=false;
+					}
+					else f2.innerText=" ";
+					return val;
+}
+</script>
+</head>
+<body>
+	<div id="templatemo_background_section_top">
+		<div class="templatemo_container">
+			<div id="templatemo_header">
+				<div id="templatemo_logo">
+					<h1>GDPR-COMPLIANT PERSONAL DATA MANAGEMENT</h1>
+                    <h2>WE SECURE YOUR DOCUMENTS</h2>
+				</div>
+                      
+        
+	</div><!--  End Of Back Ground Section Top  -->
+    
+                   
+                <div id="templatemo_section">
+                	<h2>Welcome to GDPR-Compliant Personal Data Management System</h2>
+		<table><tr>
+               	  <td><img alt="Image" src="images/templatemo_image.jpg" /></td>	
+				
+		    <td ><p><b>GDPR-Compliant Personal Data Management System</b> solution streamlines your document management processes. Secure online file storage capabilities let you store and organize documents online and access them where ever you are. You can share documents online and collaborate on them with colleagues, customers and partners. Online document management and document collaboration let you store, organize, view, and modify files with just an Internet connection. There's no software to install, no servers to maintain...ever!
+			online document management system at a fraction of the time and cost of traditional document management software. Our effective document manager solution is low-cost, hassle-free, scalable, and secure.
+			Document management software allows files to be stored, organized, and modified seamlessly. Professionals need better document management capabilities to streamline document creation, review, and sharing processes. Get an all-in-one document solution for your business and save time and money</p></td>
+			
+			<td >
+			<fieldset>
+			<legend style="color:white;">login</legend>
+			<form action="login.jsp" method="post" onsubmit="return valid1()" >
+			<p style="color: red;">invalid username or password</p>
+			<table align="center">
+					<tr>
+						<td>username<input type="text" name="uname" /><br/></td>
+						<td><p id="f1"></p></td>
+					</tr>
+					<tr>
+						<td>password<input type="password" name="pwd"/><br/></td>
+						<td><p id="f2"></p></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="submit"/></td>
+					</tr>
+				</table>
+			</form>
+			<p><a href="reg.html"><b>register now</b></a></p>
+			<p><a href="fogotPwd.jsp"><b>forgot password?</b></a></p>
+			</fieldset>
+			</td></tr>
+			</table>
+			
+         </div>      	  
+         
+</div></div>
+</body>
+
+</html>

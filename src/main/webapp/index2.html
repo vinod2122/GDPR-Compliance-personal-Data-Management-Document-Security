@@ -1,0 +1,73 @@
+<html>
+<head>
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function valid1(){
+					var uname=document.forms[0].uname.value;
+					var pwd=document.forms[0].pwd.value;
+					var val=true;
+					if(uname==""){
+						f1.innerText="username required";
+							val=false;
+					}
+					else f1.innerText=" ";
+					if(pwd==""){
+						f2.innerText="password required";
+						val=false;
+					}
+					else f2.innerText=" ";
+					return val;
+}
+</script>
+</head>
+<body>
+	<div id="templatemo_background_section_top">
+		<div class="templatemo_container">
+			<div id="templatemo_header">
+				<div id="templatemo_logo">
+					<h1>GDPR-COMPLIANT PERSONAL DATA MANAGEMENT</h1>
+                    <h2>WE SECURE YOUR DOCUMENTS</h2>
+				</div>
+                      
+        
+	</div><!--  End Of Back Ground Section Top  -->
+    
+                   
+                <div id="templatemo_section">
+                	<h2>Welcome to GDPR-Compliant Personal Data Management System</h2>
+		<table><tr>
+               	  <td><img alt="Image" src="images/templatemo_image.jpg" /></td>	
+				
+		    <td ><p><b>GDPR-Compliant Personal Data Management System</b> <p></p>
+		    Registered Successfully</p></td>
+			
+			<td >
+			<fieldset>
+			<legend style="color:white;">login</legend>
+			<form action="login.jsp" method="post" onsubmit="return valid1()" >
+			<table align="center">
+					<tr>
+						<td>username<input type="text" name="uname" /><br/></td>
+						<td><p id="f1"></p></td>
+					</tr>
+					<tr>
+						<td>password<input type="password" name="pwd"/><br/></td>
+						<td><p id="f2"></p></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="submit"/></td>
+					</tr>
+				</table>
+			</form>
+			<p><a href="reg1.jsp"><b>register now</b></a></p>
+			<p><a href="fogotPwd.jsp"><b>forgot password?</b></a></p>
+			</fieldset>
+			</td></tr>
+			</table>
+			
+         </div>      	  
+         
+</div></div>
+</body>
+
+</html>
